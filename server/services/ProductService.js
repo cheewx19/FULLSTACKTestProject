@@ -9,7 +9,10 @@ recordRoutes.route("/api/products").post(function (req, res) {
     var db = dbo.getDB();
     let paramid = {_id: req.body.id};
     delete req.body.id;
-    let param = Object.assign(paramid, req.body)
+    req.body.createdAt = new Date(req.body.createdAt);
+    req.body.updatedAt = new Date(req.body.updatedAt);
+    let param = Object.assign(paramid, req.body);
+
     console.log(param)
     db.collection("Products").insertOne(param, function (err, apiResponse) {
       if (err) throw err;
@@ -37,6 +40,7 @@ recordRoutes.route("/api/products/:id").post(function (req, res) {
         "createdAt": new Date(req.body.createdAt),
         "updatedAt": new Date(req.body.updatedAt),
         "name": req.body.name,
+        "description": req.body.description,
         "price": req.body.price,
         "image": req.body.image,
         "tags": req.body.tags,

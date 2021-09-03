@@ -6,6 +6,12 @@ mongoose.plugin((schema) => {
       versionKey: false,
       transform(doc, ret) {
         delete ret._id;
+        if (ret.description == "")
+            delete ret.description;
+        if (ret.image == "")
+            delete ret.image;
+        if (ret.tags.length < 1)
+            delete tags;
       }
     };
   });
@@ -25,6 +31,9 @@ let Product = new Schema({
     },
     price: {
         type: Number
+    },
+    description: {
+        type: String
     },
     image: {
         type: String
