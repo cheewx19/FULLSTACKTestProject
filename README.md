@@ -3,8 +3,13 @@
 Please note that the MongoDB is local and it has not been deployed.
 
 To run locally on terminal (separately)
-- Backend: ````node /server/server.js```` (localhost:5000)
-- Frontend: ````npm start```` (localhost:3000)
+1. Backend: ````node /server/server.js```` (localhost:5000)
+2. Frontend:  
+   - ````cd project_app````
+   - ````npm start```` (localhost:3000)
+4. Testing:
+   - ````cd server/test````
+   - ````npm test```` 
 
 
 ## Main Branch
