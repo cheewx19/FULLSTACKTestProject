@@ -38,8 +38,8 @@ recordRoutes.route("/api/products/:id").get(function (req, res) {
 // CHALLENGE 3
 recordRoutes.route("/api/products/:id").post(function (req, res) {
     var db = dbo.getDB();
-    if (!req.body.id || !req.body.createdAt || !req.body.updatedAt || req.body.name 
-      || req.body.price) throw "Please input Id, createdAt, updatedAt, name and price";
+    if (!req.body.id || !req.body.createdAt || !req.body.updatedAt || !req.body.name 
+      || !req.body.price) throw "Please input Id, createdAt, updatedAt, name and price";
 
     let newvalues = {
       $set: {
