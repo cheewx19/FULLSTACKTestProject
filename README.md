@@ -1,5 +1,7 @@
 # FULLSTACKTestProject
 
+Please note that the MongoDB is local and it has not been deployed.
+
 ## Main Branch
 1. For Challenge 1 - 4, please refer to ````./server/ProductService```` file for codes
 
