@@ -66,6 +66,11 @@ export default class CreateProduct extends Component {
   };
 
   onAdd = () => {
+    if (this.state.tagName == "") {
+      alert("Please enter a tag name before adding");
+      return;
+    }
+    
     var tags = this.state.tags;
     tags.push(this.state.tagName);
     this.setState({
