@@ -1,13 +1,13 @@
 # FULLSTACKTestProject
 
 ## Main Branch
-1. For Challenge 1 - 4, please refer to ./server/ProductService file for codes
+1. For Challenge 1 - 4, please refer to **./server/ProductService** file for codes
 
-2. For Challenge 5, please refer to ./project_app/src/components/CRUDProduct.js for React application
+2. For Challenge 5, please refer to **./project_app/src/components/CRUDProduct.js** for React application
 
-3. For Challenge 7, please refer to ./server/test/test.js for unit tests
+3. For Challenge 7, please refer to **./server/test/test.js** for unit tests
 
-4. For Challenge 8, please refer to ./server/ProductService.js for backend validation and ./project_app/src/components/CRUDProduct.js for frontend validation
+4. For Challenge 8, please refer to **./server/ProductService.js for backend** validation and **./project_app/src/components/CRUDProduct.js for frontend** validation
 Specially, 
 Backend (ProductService.js)
 - Line 10
