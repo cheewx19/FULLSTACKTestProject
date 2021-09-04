@@ -18,19 +18,24 @@ mongoose.plugin((schema) => {
   
 let Product = new Schema({
     id: {
-        type: String
+        type: String,
+        required: true
     },
     createdAt: {
-        type: Date
+        type: Date,
+        required: true
     },
     updatedAt: {
-        type: Date
+        type: Date,
+        required: true
     },
     name: {
-        type: String
+        type: String,
+        required: true
     },
     price: {
-        type: Number
+        type: Number,
+        required: true
     },
     description: {
         type: String
