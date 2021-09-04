@@ -1,11 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
-import CreateProduct from './components/CreateProduct';
-import EditProduct from './components/EditProduct';
+import CreateProduct from './components/CRUDProduct';
 function App() {
   return (
     <div className="App">
-    <EditProduct></EditProduct>
+    <CreateProduct></CreateProduct>
     </div>
   );
 }
