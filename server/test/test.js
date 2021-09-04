@@ -58,7 +58,6 @@ describe("Test Update Product /api/products/:id", () => {
         }
         chai.request(server).post("/api/products/" + product.id).send(product).end((err,res) => {
             if (err) throw err;
-            console.log(res)
             res.should.have.status(200);
             res.body.should.be.a('object');
             done();
