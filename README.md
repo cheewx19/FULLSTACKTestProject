@@ -3,6 +3,7 @@
 Please note that the MongoDB is local and it has not been deployed.
 
 To run locally on terminal (separately)
+Pre-Req: ````npm install````
 1. Backend: ````node /server/server.js```` (localhost:5000)
 2. Frontend:  
    - ````cd project_app````
